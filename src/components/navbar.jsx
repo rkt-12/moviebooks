@@ -29,9 +29,9 @@ function Navbar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Link href={"/"}>
-        <Typography variant="h6" sx={{ my: 2 }}>
-          onlyMovies
+      <Link href={"/"} passHref>
+        <Typography variant="h6" sx={{ my: 2 }} component="a">
+          MOVIEBOOKS
         </Typography>
       </Link>
       <Divider />
@@ -82,7 +82,7 @@ function Navbar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            <Link href="/">onlyMovies</Link>
+            <Link href="/">MOVIEBOOKS</Link>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Button sx={{ color: "#fff" }}>
